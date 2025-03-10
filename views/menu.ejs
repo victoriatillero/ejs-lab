@@ -10,7 +10,7 @@
   <h1>Full Menu</h1>
   <ul>
     <% menu.forEach((item) => { %>
-    <li><strong> <%= item.name %>: </strong> <%= item.details %> <i> <br><%= item.rating %>/5 stars <br> $<%= item.price %> </i> </li>
+    <li><strong> <%= item.rating === 5 ? ' ⭐' : '' %> <%= item.name %> </strong>  <%= item.details %> <i> <br><%= item.rating %>/5 stars <br> $<%= item.price %> </i> </li>
     <% }) %>
   </ul>
 </body>
